@@ -1,0 +1,53 @@
+.mynav {
+    background: linear-gradient(#ECF8E8, #E0F2FF);
+}
+.back{
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+        
+}
+.mytitle{
+    size: 55px;
+    font:400;
+    text-align: center;
+    line-height: 0.5px;
+    margin-bottom:20px ;
+}
+
+.myp{
+    line-height: 5px;
+    margin: 0;
+    text-align: center;
+}
+.mysear{
+
+    margin-top: 5px;
+    margin-right: 7px;
+}
+.mysearch{
+    width: 570px;
+    border: none;
+}
+input:focus {
+    outline:none;
+}
+.mytab{
+    margin-top: 20px;
+    width:620px ;
+    
+    background-color: #f7fbfd;
+}
+.mytab h2{
+    size: 30px;
+    font:400;
+}
+
+
+ tr:nth-child(odd) {
+    background-color: #E0F2FF;
+    }
+
+   tr:nth-child(even) {
+    background-color: #ECF8E8;
+    }

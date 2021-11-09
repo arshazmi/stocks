@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+html {
+    min-height: 100%;
+    /*Do 'height' only (remove 'min-') and you'll see the gradient background repeat rather than extend. */
+}
+
+body {
+    background: linear-gradient(#ECF8E8, #E0F2FF);
+}
+input:focus {
+    outline:none;
+}

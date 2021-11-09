@@ -1,0 +1,97 @@
+<nav class="navbar navbar-light mynav">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Stocks</span>
+  </div>
+</nav>
+<div class="back">
+  <div class="mytitle">
+    <h1 >The easiest way to buy</h1><br>
+     <h1 > sell stocks</h1>
+  </div>
+  <div class="myp">
+    <p>Stock analysis and screening tool for</p><br>
+    <p>Investors in India</p>
+  </div>
+  <div>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <form class="d-flex">
+          <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          <i class="bi bi-search mysear"(click)="getStocks(stock.name)" ></i>
+          
+          <input class="form-control me-2 mysearch" type="search" placeholder="Search" name="name"  [(ngModel)]="stock.name" aria-label="Search">
+        </form>
+      </div>
+    </nav>
+  </div>
+  <div class="mytab">
+    <div class="container">
+      <h2>{{stock.name}}</h2>
+      <div class="row">
+        <div class="col">
+          <table class="table  table-striped ">
+              <tbody>
+                <tr>
+                  <td>Market Cap</td>
+                  <td>{{stock.marketCap}}</td>
+                </tr>
+                <tr>
+                  <td>Current Price</td>
+                  <td>{{stock.cmp}}</td>
+                </tr>
+                <tr>
+                  <td >Stock </td>
+                  <td >{{stock.stock}} </td>
+                </tr>
+                <tr>
+                  <td >Debt </td>
+                  <td >{{stock.debt}} </td>
+                </tr>
+              </tbody>
+           
+          </table>
+        </div>
+        <div class="col">
+          <table class="table  table-striped">
+            <tbody>
+              <tr>
+                <td>Divident Yield</td>
+                <td>{{stock.dividentYield}}</td>
+              </tr>
+              <tr>
+                <td>ROCE</td>
+                <td>{{stock.roce}}</td>
+              </tr>
+              <tr>
+                <td >ROE </td>
+                <td >{{stock.roe}} </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <table class="table  table-striped">
+            <tbody>
+              <tr>
+                <td>Debt Equity</td>
+                <td>{{stock.eps}}</td>
+              </tr>
+              <tr>
+                <td>Eps</td>
+                <td>{{stock.eps}}</td>
+              </tr>
+              <tr>
+                <td >Reserves </td>
+                <td >{{stock.reserve}}</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+     
+
+</div>
